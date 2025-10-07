@@ -1,12 +1,15 @@
-package com.Hands_On.Course_Mgmt_Sys.Services;
+package com.Hands_On.Course_Mgmt_Sys.services;
 
-import com.Hands_On.Course_Mgmt_Sys.Models.User;
-import com.Hands_On.Course_Mgmt_Sys.Repositories.UserRepository;
+import com.Hands_On.Course_Mgmt_Sys.models.User;
+import com.Hands_On.Course_Mgmt_Sys.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class UserService implements UserDetailsService {
@@ -18,18 +21,11 @@ public class UserService implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = userRepository.findByUsername(username)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found"));
-
-//        return org.springframework.security.core.userdetails.User
-//                .withUsername(user.getUsername())
-//                .password(user.getPassword()) // make sure it's encoded
-//                .roles(user.getRole().name())
-//                .build();
-//    }
-        return org.springframework.security.core.userdetails.User
-                .withUsername(user.getUsername())
-                .password(user.getPassword())
-                .authorities(user.getRole().name())
-                .build();
-    }
+            return new org.springframework.security.core.userdetails.User(
+                    user.getUsername(),
+                    user.getPassword(),
+                    List.of(new SimpleGrantedAuthority("ROLE_" + user.getRole().name()))
+            );
+        }
 
 }

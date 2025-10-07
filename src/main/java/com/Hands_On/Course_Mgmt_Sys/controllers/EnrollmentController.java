@@ -1,4 +1,4 @@
-package com.Hands_On.Course_Mgmt_Sys.Controllers;
+package com.Hands_On.Course_Mgmt_Sys.controllers;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/courses")
-public class CourseController {
+@RequestMapping("/enrollments")
+public class EnrollmentController {
 
-//    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('STUDENT')")
     @PostMapping
-    public String createCourse() {
-        return "Course created!";
+    public String enrollCourse() {
+        return "Course enrolled!";
     }
 }
 

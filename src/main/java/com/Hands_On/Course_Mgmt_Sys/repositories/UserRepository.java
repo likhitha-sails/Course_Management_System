@@ -1,6 +1,6 @@
-package com.Hands_On.Course_Mgmt_Sys.Repositories;
+package com.Hands_On.Course_Mgmt_Sys.repositories;
 
-import com.Hands_On.Course_Mgmt_Sys.Models.User;
+import com.Hands_On.Course_Mgmt_Sys.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 

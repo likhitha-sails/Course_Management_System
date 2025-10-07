@@ -1,13 +1,12 @@
-package com.Hands_On.Course_Mgmt_Sys.Services;
+package com.Hands_On.Course_Mgmt_Sys.services;
 
-import com.Hands_On.Course_Mgmt_Sys.Enums.Role;
-import com.Hands_On.Course_Mgmt_Sys.Models.Course;
-import com.Hands_On.Course_Mgmt_Sys.Models.Enroll;
-import com.Hands_On.Course_Mgmt_Sys.Models.Student;
-import com.Hands_On.Course_Mgmt_Sys.Models.User;
-import com.Hands_On.Course_Mgmt_Sys.Repositories.CourseRepository;
-import com.Hands_On.Course_Mgmt_Sys.Repositories.EnrollmentRepository;
-import com.Hands_On.Course_Mgmt_Sys.Repositories.UserRepository;
+import com.Hands_On.Course_Mgmt_Sys.enums.Role;
+import com.Hands_On.Course_Mgmt_Sys.models.Course;
+import com.Hands_On.Course_Mgmt_Sys.models.Enroll;
+import com.Hands_On.Course_Mgmt_Sys.models.User;
+import com.Hands_On.Course_Mgmt_Sys.repositories.CourseRepository;
+import com.Hands_On.Course_Mgmt_Sys.repositories.EnrollmentRepository;
+import com.Hands_On.Course_Mgmt_Sys.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

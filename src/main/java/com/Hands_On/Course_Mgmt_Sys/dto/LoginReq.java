@@ -1,4 +1,4 @@
-package com.Hands_On.Course_Mgmt_Sys.DTO;
+package com.Hands_On.Course_Mgmt_Sys.dto;
 
 import lombok.Data;
 

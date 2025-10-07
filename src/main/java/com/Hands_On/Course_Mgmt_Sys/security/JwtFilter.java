@@ -1,7 +1,7 @@
 
-package com.Hands_On.Course_Mgmt_Sys.Security;
+package com.Hands_On.Course_Mgmt_Sys.security;
 
-import com.Hands_On.Course_Mgmt_Sys.Services.UserService;
+import com.Hands_On.Course_Mgmt_Sys.services.UserService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
