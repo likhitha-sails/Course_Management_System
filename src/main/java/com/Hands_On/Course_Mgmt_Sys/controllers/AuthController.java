@@ -1,8 +1,8 @@
-package com.Hands_On.Course_Mgmt_Sys.Controllers;
+package com.Hands_On.Course_Mgmt_Sys.controllers;
 
-import com.Hands_On.Course_Mgmt_Sys.DTO.LoginReq;
-import com.Hands_On.Course_Mgmt_Sys.Models.User;
-import com.Hands_On.Course_Mgmt_Sys.Services.AuthenticationService;
+import com.Hands_On.Course_Mgmt_Sys.dto.LoginReq;
+import com.Hands_On.Course_Mgmt_Sys.models.User;
+import com.Hands_On.Course_Mgmt_Sys.services.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

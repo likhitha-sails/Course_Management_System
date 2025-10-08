@@ -1,9 +1,9 @@
-package com.Hands_On.Course_Mgmt_Sys.Services;
+package com.Hands_On.Course_Mgmt_Sys.services;
 
-import com.Hands_On.Course_Mgmt_Sys.DTO.LoginReq;
-import com.Hands_On.Course_Mgmt_Sys.Models.User;
-import com.Hands_On.Course_Mgmt_Sys.Repositories.UserRepository;
-import com.Hands_On.Course_Mgmt_Sys.Security.JwtUtil;
+import com.Hands_On.Course_Mgmt_Sys.dto.LoginReq;
+import com.Hands_On.Course_Mgmt_Sys.models.User;
+import com.Hands_On.Course_Mgmt_Sys.repositories.UserRepository;
+import com.Hands_On.Course_Mgmt_Sys.security.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

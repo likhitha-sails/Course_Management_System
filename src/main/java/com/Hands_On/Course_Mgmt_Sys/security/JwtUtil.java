@@ -1,4 +1,4 @@
-package com.Hands_On.Course_Mgmt_Sys.Security;
+package com.Hands_On.Course_Mgmt_Sys.security;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.stereotype.Component;

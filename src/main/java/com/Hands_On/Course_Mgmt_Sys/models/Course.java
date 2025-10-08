@@ -1,4 +1,4 @@
-package com.Hands_On.Course_Mgmt_Sys.Models;
+package com.Hands_On.Course_Mgmt_Sys.models;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -17,5 +17,5 @@ public class Course {
     private String course_description;
 
     @ManyToOne
-    private User Instructor;
+    private User instructor;
 }
